@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
@@ -9,6 +10,7 @@
 <title>Polished Intentions</title>
 
 <style>
+
 body {
   margin: 0;
   font-family: 'Poppins', sans-serif;
@@ -17,21 +19,19 @@ body {
   text-align: center;
 }
 
-h1, h2 {
-  color: #D4AF37;
-}
-
-/* HERO HEADER LAYOUT */
+/* HEADER */
 .hero-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
+  gap: 18px;
+  margin-top: 20px;
 }
 
 /* LOGO */
 .logo {
-  width: 80px;
+  width: 150px;
+  height: auto;
 }
 
 /* TITLE */
@@ -40,15 +40,16 @@ h1, h2 {
   font-size: 60px;
   font-weight: 400;
   margin: 0;
-  line-height: 1.2;
+  line-height: 1.1;
   text-align: left;
 }
 
 .byline {
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   font-family: 'Poppins', sans-serif;
   color: #ccc;
+  margin-top: 5px;
 }
 
 /* HERO */
@@ -57,7 +58,7 @@ h1, h2 {
 }
 
 .tagline {
-  font-size: 28px;
+  font-size: 26px;
   margin: 20px 0;
 }
 
@@ -74,6 +75,8 @@ h1, h2 {
   text-decoration: none;
   border-radius: 30px;
   font-weight: bold;
+  display: inline-block;
+  transition: 0.3s;
 }
 
 .button:hover {
@@ -85,6 +88,11 @@ h1, h2 {
   padding: 60px 20px;
 }
 
+h1, h2 {
+  color: #D4AF37;
+}
+
+/* SERVICES */
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -98,17 +106,20 @@ h1, h2 {
   width: 250px;
 }
 
+/* GALLERY */
 .gallery img {
   width: 200px;
   border-radius: 10px;
   margin: 10px;
 }
 
+/* FOOTER */
 .footer {
   padding: 40px;
   font-size: 14px;
   color: #aaa;
 }
+
 </style>
 </head>
 
@@ -117,22 +128,27 @@ h1, h2 {
 <!-- HERO -->
 <div class="hero">
 
-  <img src="logo.png" alt="Logo" class="logo">
   <div class="hero-header">
-    <img src="logo.png" alt="Logo" class="logo">
 
+    <!-- LOGO -->
+    <img src="logo.png" alt="Polished Intentions Logo" class="logo">
+
+    <!-- TITLE -->
     <h1 class="brand-title">
       Polished Intentions
       <span class="byline">by Alicia</span>
     </h1>
+
   </div>
 
   <div class="tagline">Luxe Intentions. Flawless Nails.</div>
   <div class="subtext">Designed with intention. Finished to perfection.</div>
 
+  <!-- FACEBOOK BOOKING -->
   <a href="https://facebook.com/YOUR-PAGE-LINK" target="_blank" class="button">
     BOOK YOUR APPOINTMENT
   </a>
+
 </div>
 
 <!-- SERVICES -->
@@ -140,6 +156,7 @@ h1, h2 {
   <h2>Services</h2>
 
   <div class="services">
+
     <div class="card">
       <h3>Acrylics</h3>
       <p>Starting at $70</p>
@@ -156,9 +173,10 @@ h1, h2 {
     </div>
 
     <div class="card">
-      <h3>Extras</h3>
-      <p>Starting at $10</p>
+      <h3>Nail Art</h3>
+      <p>Starting at $15</p>
     </div>
+
   </div>
 
   <p style="margin-top:20px; color:#aaa;">
