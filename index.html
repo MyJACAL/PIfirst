@@ -6,39 +6,54 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Polished Intentions</title>
 
-<!-- GOOGLE FONTS -->
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Tangerine:wght@400;700&family=Kaushan+Script&family=Parisienne&family=Alex+Brush&family=Italiana&display=swap" rel="stylesheet">
+<!-- FONTS (simplified for luxury feel) -->
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Kaushan+Script&display=swap" rel="stylesheet">
 
 <style>
 
-/* GLOBAL */
+/* =====================
+   GLOBAL LUXURY BASE
+===================== */
 body {
-  font-family: 'Italiana', serif;
   margin: 0;
-  background-color: #000;
-  color: #fff;
+  font-family: 'Italiana', serif;
+  background-color: #0a0a0a;
+  color: #e6e1d8;
   text-align: center;
+  line-height: 1.7;
 }
 
-/* HERO HEADER */
+/* GOLD ACCENT */
+:root {
+  --gold: #c9a24e;
+}
+
+/* =====================
+   HERO
+===================== */
+.hero {
+  padding: 110px 20px 80px;
+}
+
 .hero-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
-  margin-top: 20px;
+  gap: 22px;
+  margin-bottom: 10px;
 }
 
-/* LOGO */
 .logo {
-  width: 350px;
+  width: 340px;
+  height: auto;
 }
 
-/* TITLE */
+/* BRAND TITLE */
 .brand-title {
   font-family: 'Great Vibes', cursive;
-  font-size: 60px;
+  font-size: 64px;
   margin: 0;
+  color: var(--gold);
   text-align: left;
 }
 
@@ -46,93 +61,149 @@ body {
   display: block;
   font-family: 'Italiana', serif;
   font-size: 18px;
-  color: #ccc;
+  color: #bdb7ab;
 }
 
-/* H1 GLOBAL */
-h1 {
-  font-family: 'Tangerine', cursive;
-}
-
-/* HERO */
-.hero {
-  padding: 80px 20px;
-}
-
+/* TAGLINE */
 .tagline {
-  font-size: 26px;
+  font-size: 24px;
+  margin-top: 10px;
 }
 
 .subtext {
-  color: #ccc;
-  margin-bottom: 20px;
+  color: #bdb7ab;
+  margin-bottom: 30px;
 }
 
-/* BUTTON */
+/* =====================
+   BUTTON (LUXURY STYLE)
+===================== */
 .button {
   font-family: 'Kaushan Script', cursive;
   background-color: #012d21;
-  color: #D4AF37;
-  padding: 15px 30px;
+  color: var(--gold);
+  padding: 16px 36px;
   text-decoration: none;
-  border-radius: 30px;
+  border-radius: 40px;
   display: inline-block;
+  letter-spacing: 1px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
 }
 
-/* WELCOME TEXT */
+.button:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+/* =====================
+   WELCOME TEXT
+===================== */
 .welcome-text {
-  max-width: 600px;
-  margin: 20px auto;
-  color: #ccc;
-  line-height: 1.6;
+  max-width: 650px;
+  margin: 25px auto 0;
+  color: #bdb7ab;
+  font-size: 16px;
 }
 
-/* SECTIONS */
+/* DIVIDER */
+.divider {
+  width: 60px;
+  height: 2px;
+  background: var(--gold);
+  margin: 40px auto;
+  opacity: 0.7;
+}
+
+/* =====================
+   SECTIONS
+===================== */
 .section {
-  padding: 60px 20px;
+  padding: 110px 20px;
 }
 
 h2 {
-  color: #D4AF37;
+  color: var(--gold);
+  font-size: 28px;
+  letter-spacing: 1px;
 }
 
-/* SERVICES */
+/* =====================
+   SERVICES (CLEAN GRID)
+===================== */
 .services {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-}
-
-.card h3 {
-  font-family: 'Alex Brush', cursive;
-  font-size: 26px;
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .card {
-  border: 1px solid #D4AF37;
-  padding: 20px;
-  width: 250px;
+  border: 1px solid rgba(201,162,78,0.5);
+  padding: 25px;
+  width: 240px;
+  background-color: rgba(255,255,255,0.02);
+  transition: 0.3s ease;
 }
 
-/* GALLERY */
+.card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+}
+
+.card h3 {
+  font-family: 'Italiana', serif;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* =====================
+   GALLERY (LUXE LOOK)
+===================== */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
 .gallery img {
-  width: 200px;
-  border-radius: 10px;
-  margin: 10px;
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.3s ease;
 }
 
-/* MEET ALICIA TITLE */
+.gallery img:hover {
+  transform: scale(1.03);
+}
+
+/* =====================
+   ABOUT
+===================== */
 .meet-title {
-  font-family: 'Parisienne', cursive;
-  font-size: 36px;
+  font-family: 'Italiana', serif;
+  font-size: 26px;
+  color: var(--gold);
+  margin-bottom: 10px;
 }
 
-/* FOOTER */
+.about-text {
+  max-width: 650px;
+  margin: auto;
+  text-align: left;
+  color: #bdb7ab;
+}
+
+/* =====================
+   FOOTER
+===================== */
 .footer {
-  padding: 40px;
-  font-size: 14px;
-  color: #aaa;
+  padding: 50px;
+  font-size: 13px;
+  color: #7d7a73;
 }
 
 </style>
@@ -145,21 +216,19 @@ h2 {
 <div class="hero">
 
   <div class="hero-header">
-
     <img src="logo.png" class="logo">
 
     <h1 class="brand-title">
       Polished Intentions
       <span class="byline">by Alicia</span>
     </h1>
-
   </div>
 
   <div class="tagline">Luxe Intentions. Flawless Nails.</div>
-  <div class="subtext">Designed with intention. Finished to perfection.</div>
+  <div class="subtext">Precision-crafted nail artistry for elevated self-expression.</div>
 
   <a href="https://facebook.com/YOUR-PAGE-LINK" target="_blank" class="button">
-    BOOK NOW
+    BOOK YOUR APPOINTMENT
   </a>
 
   <p class="welcome-text">
@@ -168,10 +237,13 @@ h2 {
     We can’t wait to welcome you—book your appointment now!
   </p>
 
+  <div class="divider"></div>
+
 </div>
 
 <!-- SERVICES -->
 <div class="section">
+
   <h2>Services</h2>
 
   <div class="services">
@@ -200,24 +272,31 @@ h2 {
 
 </div>
 
+<div class="divider"></div>
+
 <!-- GALLERY -->
-<div class="section gallery">
+<div class="section">
+
   <h2>Recent Work</h2>
 
-  <!-- FIXED: renamed third image -->
-  <img src="Red Nails.jpg" alt="Red nails">
-  <img src="Yellow Lemon Nails.jpg" alt="Yellow nails">
-  <img src="pinknails.jpg" alt="pink nails">
+  <div class="gallery">
+    <img src="Red Nails.jpg" alt="Red nails">
+    <img src="Yellow Lemon Nails.jpg" alt="Yellow nails">
+    <img src="Pink.jpg" alt="Pink nails">
+  </div>
 
 </div>
 
+<div class="divider"></div>
+
 <!-- ABOUT -->
 <div class="section">
+
   <h2 class="meet-title">Meet Alicia</h2>
 
-  <p style="max-width:600px; margin:auto;">
-    I specialize in luxury nail services designed to enhance your confidence and style.
-    Every set is created with intention, precision, and attention to detail.
+  <p class="about-text">
+    I specialize in luxury nail services designed to enhance your confidence and style. 
+    Every set is created with intention, precision, and attention to detail—because luxury is in the details, not excess.
   </p>
 
 </div>
