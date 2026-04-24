@@ -6,62 +6,41 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Polished Intentions</title>
 
-<!-- FONTS (simplified for luxury feel) -->
+<!-- FONTS -->
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Italiana&family=Kaushan+Script&display=swap" rel="stylesheet">
 
 <style>
 
-/* =====================
-   GLOBAL LUXURY BASE
-===================== */
+/* GLOBAL */
 body {
   margin: 0;
   font-family: 'Italiana', serif;
-  background-color: #0a0a0a;
+  background-color: #000; /* BACK TO PURE BLACK */
   color: #e6e1d8;
   text-align: center;
   line-height: 1.7;
 }
 
-/* GOLD ACCENT */
 :root {
   --gold: #c9a24e;
 }
 
-/* =====================
-   HERO
-===================== */
+/* HERO */
 .hero {
   padding: 110px 20px 80px;
 }
 
+/* HEADER (LOGO ONLY) */
 .hero-header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 22px;
-  margin-bottom: 10px;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
 .logo {
-  width: 340px;
+  width: 360px;
   height: auto;
-}
-
-/* BRAND TITLE */
-.brand-title {
-  font-family: 'Great Vibes', cursive;
-  font-size: 64px;
-  margin: 0;
-  color: var(--gold);
-  text-align: left;
-}
-
-.byline {
-  display: block;
-  font-family: 'Italiana', serif;
-  font-size: 18px;
-  color: #bdb7ab;
 }
 
 /* TAGLINE */
@@ -75,9 +54,7 @@ body {
   margin-bottom: 30px;
 }
 
-/* =====================
-   BUTTON (LUXURY STYLE)
-===================== */
+/* BUTTON */
 .button {
   font-family: 'Kaushan Script', cursive;
   background-color: #012d21;
@@ -96,9 +73,7 @@ body {
   opacity: 0.95;
 }
 
-/* =====================
-   WELCOME TEXT
-===================== */
+/* WELCOME TEXT */
 .welcome-text {
   max-width: 650px;
   margin: 25px auto 0;
@@ -115,9 +90,7 @@ body {
   opacity: 0.7;
 }
 
-/* =====================
-   SECTIONS
-===================== */
+/* SECTIONS */
 .section {
   padding: 110px 20px;
 }
@@ -125,12 +98,9 @@ body {
 h2 {
   color: var(--gold);
   font-size: 28px;
-  letter-spacing: 1px;
 }
 
-/* =====================
-   SERVICES (CLEAN GRID)
-===================== */
+/* SERVICES */
 .services {
   display: flex;
   flex-wrap: wrap;
@@ -153,14 +123,10 @@ h2 {
 }
 
 .card h3 {
-  font-family: 'Italiana', serif;
   font-size: 20px;
-  color: #fff;
 }
 
-/* =====================
-   GALLERY (LUXE LOOK)
-===================== */
+/* GALLERY */
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -180,11 +146,8 @@ h2 {
   transform: scale(1.03);
 }
 
-/* =====================
-   ABOUT
-===================== */
+/* ABOUT */
 .meet-title {
-  font-family: 'Italiana', serif;
   font-size: 26px;
   color: var(--gold);
   margin-bottom: 10px;
@@ -197,9 +160,7 @@ h2 {
   color: #bdb7ab;
 }
 
-/* =====================
-   FOOTER
-===================== */
+/* FOOTER */
 .footer {
   padding: 50px;
   font-size: 13px;
@@ -216,12 +177,7 @@ h2 {
 <div class="hero">
 
   <div class="hero-header">
-    <img src="logo.png" class="logo">
-
-    <h1 class="brand-title">
-      Polished Intentions
-      <span class="byline">by Alicia</span>
-    </h1>
+    <img src="logo.png" class="logo" alt="Polished Intentions Logo">
   </div>
 
   <div class="tagline">Luxe Intentions. Flawless Nails.</div>
